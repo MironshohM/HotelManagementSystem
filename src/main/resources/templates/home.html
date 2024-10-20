@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .title {
+            margin-left: 20px;
+            font-size: 24px;
+        }
+        .header .auth-buttons {
+            margin-right: 20px;
+        }
+        .header .auth-buttons a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 16px;
+        }
+        .content {
+            margin-top: 80px;
+            text-align: center;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        .content p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="title">Hotel</div>
+    <div class="auth-buttons">
+        <a href="/hotel/login">Login</a>
+        <a href="/hotel/register">Register</a>
+    </div>
+</div>
+
+<div class="content">
+    <h1>Welcome to Hotel</h1>
+    <p>Find the best deals on rooms you need. Browse freely, but register to make order and search rooms.</p>
+</div>
+
+</body>
+</html>
